@@ -80,10 +80,10 @@ let s:iro.dark1       = ['#3c3836', 59]
 let s:iro.dark2       = ['#504945', 59]
 let s:iro.dark3       = ['#665c54', 59]
 let s:iro.dark4       = ['#5b5d63', 59]
-let s:iro.dark4_256   = ['#5b5d63', 59]
+let s:iro.dark4_256   = ['#6d7381', 59]
 
 "TODO fix names
-let s:iro.gray_245    = ['#5b5d63', 59]
+let s:iro.gray_245    = ['#6d7381', 59]
 let s:iro.gray_244    = ['#777e8d', 102]
 
 let s:iro.light0_hard = ['#ffffff', 231]
