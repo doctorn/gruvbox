@@ -70,7 +70,7 @@ endif
 
 let s:is_dark=(&background == 'dark')
 
-let s:gb = {}
+let s:iro = {}
 
 let s:iro.dark0_hard  = ['#1d2021', 234]     " 29-32-33
 let s:iro.dark0       = ['#282828', 235]     " 40-40-40
