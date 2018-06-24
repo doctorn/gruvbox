@@ -72,50 +72,54 @@ let s:is_dark=(&background == 'dark')
 
 let s:iro = {}
 
-let s:iro.dark0_hard  = ['#1d2021', 234]     " 29-32-33
-let s:iro.dark0       = ['#282828', 235]     " 40-40-40
-let s:iro.dark0_soft  = ['#32302f', 236]     " 50-48-47
-let s:iro.dark1       = ['#3c3836', 237]     " 60-56-54
-let s:iro.dark2       = ['#504945', 239]     " 80-73-69
-let s:iro.dark3       = ['#665c54', 241]     " 102-92-84
-let s:iro.dark4       = ['#7c6f64', 243]     " 124-111-100
-let s:iro.dark4_256   = ['#7c6f64', 243]     " 124-111-100
+"TODO add closest 256 colours
+let s:iro.dark0_hard  = ['#282828', 234]
+let s:iro.dark0       = ['#282828', 235]
+let s:iro.dark0_soft  = ['#282828', 236]
+"TODO replace
+let s:iro.dark1       = ['#3c3836', 237]
+let s:iro.dark2       = ['#504945', 239]
+let s:iro.dark3       = ['#665c54', 241]
+let s:iro.dark4       = ['#777e8d', 243]
+let s:iro.dark4_256   = ['#777e8d', 243]
 
-let s:iro.gray_245    = ['#928374', 245]     " 146-131-116
-let s:iro.gray_244    = ['#928374', 244]     " 146-131-116
+"TODO fix names
+let s:iro.gray_245    = ['#777e8d', 245]
+let s:iro.gray_244    = ['#afb3bc', 244]
 
-let s:iro.light0_hard = ['#f9f5d7', 230]     " 249-245-215
-let s:iro.light0      = ['#fbf1c7', 229]     " 253-244-193
-let s:iro.light0_soft = ['#f2e5bc', 228]     " 242-229-188
-let s:iro.light1      = ['#ebdbb2', 223]     " 235-219-178
-let s:iro.light2      = ['#d5c4a1', 250]     " 213-196-161
-let s:iro.light3      = ['#bdae93', 248]     " 189-174-147
-let s:iro.light4      = ['#a89984', 246]     " 168-153-132
-let s:iro.light4_256  = ['#a89984', 246]     " 168-153-132
+let s:iro.light0_hard = ['#ffffff', 230]
+let s:iro.light0      = ['#ffffff', 229]
+let s:iro.light0_soft = ['#ffffff', 228]
+"TODO replace
+let s:iro.light1      = ['#ebdbb2', 223]
+let s:iro.light2      = ['#d5c4a1', 250]
+let s:iro.light3      = ['#bdae93', 248]
+let s:iro.light4      = ['#afb3bc', 246]
+let s:iro.light4_256  = ['#afb3bc', 246]
 
-let s:iro.bright_red     = ['#fb4934', 167]     " 251-73-52
-let s:iro.bright_green   = ['#b8bb26', 142]     " 184-187-38
-let s:iro.bright_yellow  = ['#fabd2f', 214]     " 250-189-47
-let s:iro.bright_blue    = ['#83a598', 109]     " 131-165-152
-let s:iro.bright_purple  = ['#d3869b', 175]     " 211-134-155
-let s:iro.bright_aqua    = ['#8ec07c', 108]     " 142-192-124
-let s:iro.bright_orange  = ['#fe8019', 208]     " 254-128-25
+let s:iro.bright_red      = ['#db5343', 88]
+let s:iro.bright_green    = ['#84c940', 100]
+let s:iro.bright_yellow   = ['#fcc01a', 136]
+let s:iro.bright_blue     = ['#cf58bd', 24]
+let s:iro.bright_purple   = ['#cf58bd', 96]
+let s:iro.bright_aqua     = ['#f95882', 66]
+let s:iro.bright_orange   = ['#fe8b2d', 130]
 
-let s:iro.neutral_red    = ['#cc241d', 124]     " 204-36-29
-let s:iro.neutral_green  = ['#98971a', 106]     " 152-151-26
-let s:iro.neutral_yellow = ['#d79921', 172]     " 215-153-33
-let s:iro.neutral_blue   = ['#458588', 66]      " 69-133-136
-let s:iro.neutral_purple = ['#b16286', 132]     " 177-98-134
-let s:iro.neutral_aqua   = ['#689d6a', 72]      " 104-157-106
-let s:iro.neutral_orange = ['#d65d0e', 166]     " 214-93-14
+let s:iro.neutral_red    = ['#d84231', 124]
+let s:iro.neutral_green  = ['#78c42d', 106]
+let s:iro.neutral_yellow = ['#fcba04', 172]
+let s:iro.neutral_blue   = ['#1da1f2', 66]
+let s:iro.neutral_purple = ['#cb48b7', 132]
+let s:iro.neutral_aqua   = ['#f94a76', 72]
+let s:iro.neutral_orange = ['#fe8019', 166]
 
-let s:iro.faded_red      = ['#9d0006', 88]      " 157-0-6
-let s:iro.faded_green    = ['#79740e', 100]     " 121-116-14
-let s:iro.faded_yellow   = ['#b57614', 136]     " 181-118-20
-let s:iro.faded_blue     = ['#076678', 24]      " 7-102-120
-let s:iro.faded_purple   = ['#8f3f71', 96]      " 143-63-113
-let s:iro.faded_aqua     = ['#427b58', 66]      " 66-123-88
-let s:iro.faded_orange   = ['#af3a03', 130]     " 175-58-3
+let s:iro.faded_red      = ['#db5343', 88]
+let s:iro.faded_green    = ['#84c940', 100]
+let s:iro.faded_yellow   = ['#fcc01a', 136]
+let s:iro.faded_blue     = ['#cf58bd', 24]
+let s:iro.faded_purple   = ['#cf58bd', 96]
+let s:iro.faded_aqua     = ['#f95882', 66]
+let s:iro.faded_orange   = ['#fe8b2d', 130]
 
 let s:bold = 'bold,'
 if g:iro_bold == 0
