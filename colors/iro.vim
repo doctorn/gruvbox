@@ -76,10 +76,10 @@ let s:iro.dark0_hard  = ['#373a41', 59]
 let s:iro.dark0       = ['#373a41', 59]
 let s:iro.dark0_soft  = ['#373a41', 59]
 "TODO replace
-let s:iro.dark1       = ['#3c3836', 59]
-let s:iro.dark2       = ['#504945', 59]
-let s:iro.dark3       = ['#665c54', 59]
-let s:iro.dark4       = ['#5b5d63', 59]
+let s:iro.dark1       = ['#41454d', 59]
+let s:iro.dark2       = ['#4c515a', 59]
+let s:iro.dark3       = ['#575c67', 59]
+let s:iro.dark4       = ['#626874', 59]
 let s:iro.dark4_256   = ['#6d7381', 59]
 
 "TODO fix names
