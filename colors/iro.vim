@@ -148,11 +148,11 @@ let s:none = ['NONE', 'NONE']
 
 " determine relative colors
 if s:is_dark
-  let s:bg0  = s:gb.dark0
+  let s:bg0  = s:iro.dark0
   if g:iro_contrast_dark == 'soft'
-    let s:bg0  = s:gb.dark0_soft
+    let s:bg0  = s:iro.dark0_soft
   elseif g:iro_contrast_dark == 'hard'
-    let s:bg0  = s:gb.dark0_hard
+    let s:bg0  = s:iro.dark0_hard
   endif
 
   let s:bg1  = s:iro.dark1
@@ -448,8 +448,8 @@ if version >= 703
   call s:HL('CursorLineNr', s:yellow, s:bg1)
 endif
 
-hi! link NonText GruvboxBg2
-hi! link SpecialKey GruvboxBg2
+hi! link NonText IroBg2
+hi! link SpecialKey IroBg2
 
 call s:HL('Visual',    s:none,  s:bg3, s:invert_selection)
 hi! link VisualNOS Visual
@@ -520,7 +520,7 @@ hi! link PreCondit IroAqua
 
 hi! link Constant IroPurple
 hi! link Character IroPurple
-if g:gruvbox_improved_strings == 0
+if g:iro_improved_strings == 0
   call s:HL('String',  s:green, s:none, s:italicize_strings)
 else
   call s:HL('String',  s:fg1, s:bg1, s:italicize_strings)
