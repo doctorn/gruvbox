@@ -73,9 +73,9 @@ let s:is_dark=(&background == 'dark')
 let s:iro = {}
 
 "TODO add closest 256 colours
-let s:iro.dark0_hard  = ['#282828', 0]
-let s:iro.dark0       = ['#282828', 0]
-let s:iro.dark0_soft  = ['#282828', 0]
+let s:iro.dark0_hard  = ['#282828', 235]
+let s:iro.dark0       = ['#282828', 235]
+let s:iro.dark0_soft  = ['#282828', 235]
 "TODO replace
 let s:iro.dark1       = ['#3c3836', 237]
 let s:iro.dark2       = ['#504945', 239]
