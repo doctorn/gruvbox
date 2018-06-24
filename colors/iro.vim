@@ -72,9 +72,9 @@ let s:is_dark=(&background == 'dark')
 
 let s:iro = {}
 
-let s:iro.dark0_hard  = ['#777e8d', 235]
-let s:iro.dark0       = ['#777e8d', 235]
-let s:iro.dark0_soft  = ['#777e8d', 235]
+let s:iro.dark0_hard  = ['#373a41', 235]
+let s:iro.dark0       = ['#373a41', 235]
+let s:iro.dark0_soft  = ['#373a41', 235]
 "TODO replace
 let s:iro.dark1       = ['#3c3836', 59]
 let s:iro.dark2       = ['#504945', 59]
