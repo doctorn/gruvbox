@@ -101,7 +101,7 @@ let s:iro.bright_red      = ['#db5343', 88]
 let s:iro.bright_green    = ['#84c940', 100]
 let s:iro.bright_yellow   = ['#fcc01a', 136]
 let s:iro.bright_blue     = ['#cf58bd', 24]
-let s:iro.bright_purple   = ['#cf58bd', 96]
+let s:iro.bright_purple   = ['#31a9f3', 96]
 let s:iro.bright_aqua     = ['#f95882', 66]
 let s:iro.bright_orange   = ['#fe8b2d', 130]
 
@@ -116,7 +116,7 @@ let s:iro.neutral_orange = ['#fe8019', 166]
 let s:iro.faded_red      = ['#db5343', 88]
 let s:iro.faded_green    = ['#84c940', 100]
 let s:iro.faded_yellow   = ['#fcc01a', 136]
-let s:iro.faded_blue     = ['#cf58bd', 24]
+let s:iro.faded_blue     = ['#31a9f3', 24]
 let s:iro.faded_purple   = ['#cf58bd', 96]
 let s:iro.faded_aqua     = ['#f95882', 66]
 let s:iro.faded_orange   = ['#fe8b2d', 130]
@@ -347,32 +347,21 @@ if exists('g:iro_italicize_strings')
 endif
 
 function! s:HL(group, fg, ...)
-  " Arguments: group, guifg, guibg, gui, guisp
-
-  " foreground
   let fg = a:fg
-
-  " background
   if a:0 >= 1
     let bg = a:1
   else
     let bg = s:none
   endif
-
-  " emphasis
   if a:0 >= 2 && strlen(a:2)
     let emstr = a:2
   else
     let emstr = 'NONE,'
   endif
-
-  " special fallback
   if a:0 >= 3
     if g:iro_guisp_fallback != 'NONE'
       let fg = a:3
     endif
-
-    " bg fallback mode should invert higlighting
     if g:iro_guisp_fallback == 'bg'
       let emstr .= 'inverse,'
     endif
@@ -384,7 +373,6 @@ function! s:HL(group, fg, ...)
         \ 'gui=' . emstr[:-2], 'cterm=' . emstr[:-2]
         \ ]
 
-  " special
   if a:0 >= 3
     call add(histring, 'guisp=' . a:3[0])
   endif
@@ -466,16 +454,12 @@ call s:HL('Underlined', s:blue, s:none, s:underline)
 call s:HL('StatusLine',   s:bg2, s:fg1, s:inverse)
 call s:HL('StatusLineNC', s:bg1, s:fg4, s:inverse)
 
-" The column separating vertically split windows
 call s:HL('VertSplit', s:bg3, s:vert_split)
 
-" Current match in wildmenu completion
 call s:HL('WildMenu', s:blue, s:bg2, s:bold)
 
-" Directory names, special names in listing
 hi! link Directory IroGreenBold
 
-" Titles for output from :set all, :autocmd, etc.
 hi! link Title IroGreenBold
 
 call s:HL('ErrorMsg',   s:bg0, s:red, s:bold)
