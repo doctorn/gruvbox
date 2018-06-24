@@ -75,25 +75,23 @@ let s:iro = {}
 let s:iro.dark0_hard  = ['#373a41', 59]
 let s:iro.dark0       = ['#373a41', 59]
 let s:iro.dark0_soft  = ['#373a41', 59]
-"TODO replace
 let s:iro.dark1       = ['#41454d', 59]
 let s:iro.dark2       = ['#4c515a', 59]
 let s:iro.dark3       = ['#575c67', 59]
-let s:iro.dark4       = ['#626874', 59]
-let s:iro.dark4_256   = ['#6d7381', 59]
+let s:iro.dark4       = ['#626874', 60]
+let s:iro.dark4_256   = ['#6d7381', 66]
 
 "TODO fix names
-let s:iro.gray_245    = ['#6d7381', 59]
+let s:iro.gray_245    = ['#6d7381', 66]
 let s:iro.gray_244    = ['#777e8d', 102]
 
 let s:iro.light0_hard = ['#f2f3f4', 231]
 let s:iro.light0      = ['#f2f3f4', 231]
 let s:iro.light0_soft = ['#f2f3f4', 231]
-"TODO replace
-let s:iro.light1      = ['#d9dbdf', 223]
-let s:iro.light2      = ['#c1c4cb', 250]
-let s:iro.light3      = ['#a8acb6', 248]
-let s:iro.light4      = ['#8f9fa1', 102]
+let s:iro.light1      = ['#d9dbdf', 188]
+let s:iro.light2      = ['#c1c4cb', 152]
+let s:iro.light3      = ['#a8acb6', 145]
+let s:iro.light4      = ['#8f9fa1', 109]
 let s:iro.light4_256  = ['#777e8d', 102]
 
 let s:iro.bright_red      = ['#db5343', 167]
