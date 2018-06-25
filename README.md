@@ -11,7 +11,7 @@ For terminal specific installation and configuration instructions, for now just 
 
 ## Colours
 
-![iro][https://nathancorbyn.com/iro/iro.png]
+![alt text](https://nathancorbyn.com/iro/iro.png iro)
 
 | Name | Neutral | Bright |
 | - | - | - |
