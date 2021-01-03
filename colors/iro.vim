@@ -1079,6 +1079,26 @@ hi! link jsonQuote IroGreen
 hi! link jsonBraces IroFg1
 hi! link jsonString IroFg1
 
+hi! link agdaKeywords IroRedBold
+hi! link agdaOperator IroRed
+
+hi! link agdaDubious IroOrangeBold
+
+hi! link agdaFunction IroBlueBold
+hi! link agdaInfixFunction IroAqua
+
+hi! link agdaConstructor IroGreenBold
+hi! link agdaInfixConstructor IroPurpleBold
+
+hi! link agdaNumber IroPurple
+hi! link agdaCharCode IroPurple
+hi! link agdaCharCodeErr Error
+
+hi! link agdaString IroGreen
+
+hi! link agdaHole IroYellowBold
+hi! link agdaX IroYellowBold
+
 function! IroHlsShowCursor()
   call s:HL('Cursor', s:bg0, s:hls_cursor)
 endfunction
